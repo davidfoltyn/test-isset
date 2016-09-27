@@ -27,14 +27,17 @@ class TestClass implements ArrayAccess {
 
 $obj = new TestClass;
 
-echo "* Calling isset(\$obj['foo'])...\n";
+echo "* Calling isset(\$obj['foo'])...";
 var_dump(isset($obj['foo']));
+echo "<br><br>";
 
 echo "* Calling isset(\$obj['foo']['bar'])...\n";
 var_dump(isset($obj['foo']['bar']));
+echo "<br><br>";
 
 echo "* Setting offset...\n";
 $obj['foo'] = null;
+echo "<br><br>";
 
 echo "* Calling isset(\$obj['foo']['bar'])...\n";
 var_dump(isset($obj['foo']['bar']));
