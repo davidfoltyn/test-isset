@@ -83,6 +83,8 @@ class PropertyTest
 * simple test
 **/
 
+echo "<h3>PHP ".phpversion()."</h3>";
+
 $obj = new TestClass;
 
 echo "<pre>";
